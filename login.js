@@ -6,7 +6,7 @@ document.querySelector('#register').addEventListener('click', function () {
 		password: document.querySelector('#registerPassword').value,
 	}
 
-	fetch('http://weather-app-back-psi.vercel.app/users/signup', {
+	fetch('https://weather-app-back-psi.vercel.app/users/signup', {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify(user),
@@ -26,7 +26,7 @@ document.querySelector('#connection').addEventListener('click', function () {
 		password: document.querySelector('#connectionPassword').value,
 	}
 
-	fetch('http://weather-app-back-psi.vercel.app/signin', {
+	fetch('https://weather-app-back-psi.vercel.app/signin', {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify(user),

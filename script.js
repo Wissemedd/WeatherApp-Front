@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/weather')
+fetch('https://weather-app-back-psi.vercel.app/weather')
 	.then(response => response.json())
 	.then(data => {
 		if (data.weather && data.currentPosWeather) {
